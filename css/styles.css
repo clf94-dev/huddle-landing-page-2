@@ -1,0 +1,238 @@
+body {
+  overflow-x: hidden;
+}
+
+#top {
+  background-color: #EDFBFE;
+}
+
+#top .container-fluid {
+  padding-bottom: 2%;
+}
+
+#top .container-fluid div {
+  z-index: 1;
+}
+
+#top .container-fluid div .top-bar {
+  padding: 3% 5%;
+}
+
+#top .container-fluid div .top-bar div {
+  z-index: 2;
+}
+
+#top .container-fluid div .top-bar .btn-top {
+  text-align: center;
+  position: absolute;
+  right: 5%;
+  background-color: white;
+  color: #00252e;
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+#top .container-fluid div .top-bar .btn-top:hover {
+  background-color: #00252e;
+  color: white;
+}
+
+#top .container-fluid div .top {
+  padding: 3% 5%;
+}
+
+#top .container-fluid div .top .col-md-6 .container {
+  padding-top: 7%;
+  padding-right: 5%;
+}
+
+#top .container-fluid div .top .col-md-6 .container h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  padding-bottom: 5%;
+}
+
+#top .container-fluid div .top .col-md-6 .container h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+#top .container-fluid div .top .col-md-6 .container button {
+  background-color: #ff52bf;
+  color: white;
+  height: 50px;
+  border-radius: 25px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 3%;
+  padding: 0 7%;
+}
+
+#top .container-fluid div .top .col-md-6 .container button:hover {
+  background-color: white;
+  border-color: #ff52bf;
+  color: #ff52bf;
+}
+
+#top .container-fluid div .top .col-md-6 img {
+  width: 100%;
+}
+
+#top .container-fluid .background {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 789px) {
+  .top {
+    flex-flow: column-reverse;
+  }
+  .top .col-md-6 .container img {
+    margin-top: 5%;
+  }
+}
+
+.feat-cont {
+  z-index: 4;
+}
+
+.feat-cont .feat-row {
+  margin: 8% 5% 6% 5%;
+  border: 5px solid #ebfbff;
+  border-radius: 20px;
+}
+
+.feat-cont .feat-row .col-md-6 {
+  padding: 5%;
+}
+
+.feat-cont .feat-row .col-md-6 img {
+  width: 100%;
+}
+
+.feat-cont .feat-row .col-md-6 h2 {
+  margin: 15% auto 3% auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.feat-cont .feat-row .col-md-6 h4 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  padding-right: 5%;
+}
+
+@media screen and (max-width: 789px) {
+  .feat-row {
+    padding: 5% 0;
+  }
+  .reverse {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+}
+
+.cta-cont {
+  width: 50%;
+  border: 5px solid #ebfbff;
+  border-radius: 20px;
+  text-align: center;
+  padding: 3% 0;
+  background-color: white;
+  position: relative;
+  top: 50px;
+}
+
+.cta-cont h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 2%;
+}
+
+.cta-cont .cta-btn {
+  background-color: #ff52bf;
+  color: white;
+  height: 50px;
+  border-radius: 25px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 0 7%;
+}
+
+.cta-cont .cta-btn:hover {
+  background-color: white;
+  border-color: #ff52bf;
+  color: #ff52bf;
+}
+
+@media screen and (max-width: 789px) {
+  .cta-cont {
+    width: 90%;
+  }
+}
+
+.foot-cont {
+  background-color: #00252e;
+  padding: 7% 5%;
+}
+
+.foot-cont img {
+  margin-bottom: 2%;
+}
+
+.foot-cont .row img {
+  margin: 2% 5%;
+  width: 15px;
+  height: 15px;
+}
+
+.foot-cont .row h5 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5rem;
+  color: white;
+  padding: 2% 0;
+}
+
+.foot-cont .row .col-lg-3 h5 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+  padding: 2% 0;
+}
+
+.foot-cont .row .col-lg-3 h5:hover {
+  color: #ebfbff;
+}
+
+.foot-cont .row .col-lg-3 .row i {
+  color: white;
+  margin: auto 3%;
+}
+
+.foot-cont .row .col-lg-3 .row i:hover {
+  color: #ebfbff;
+}
+
+.foot-cont .row .col-lg-3 .row img {
+  margin: 2% 5%;
+  width: 15px;
+  height: 15px;
+}
+
+@media screen and (max-width: 789px) {
+  .foot-cont img {
+    margin-top: 10%;
+  }
+}

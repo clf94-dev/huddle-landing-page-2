@@ -1,0 +1,234 @@
+$pink:hsl(322, 100%, 66%);
+$very-pale-cyan: hsl(193, 100%, 96%);
+$very-dark-cyan:hsl(192, 100%, 9%);
+$grayish-blue:hsl(208, 11%, 55%);
+$font-family-head:'Poppins',
+sans-serif;
+$font-family-body:'Open Sans',
+sans-serif;
+$font-weight4:400;
+$font-weight6:600;
+$font-weight7:700;
+//-----------------------------------
+body {
+    overflow-x: hidden;
+}
+
+#top {
+    background-color: #EDFBFE;
+    .container-fluid {
+        padding-bottom: 2%;
+        div {
+            z-index: 1;
+            .top-bar {
+                padding: 3% 5%;
+                div {
+                    z-index: 2;
+                }
+                .btn-top {
+                    text-align: center;
+                    position: absolute;
+                    right: 5%;
+                    background-color: white;
+                    color: $very-dark-cyan;
+                    width: 150px;
+                    height: 50px;
+                    border-radius: 25px;
+                    &:hover {
+                        background-color: $very-dark-cyan;
+                        color: white;
+                    }
+                }
+            }
+            .top {
+                padding: 3% 5%;
+                .col-md-6 {
+                    .container {
+                        padding-top: 7%;
+                        padding-right: 5%;
+                        h1 {
+                            font-family: $font-family-head;
+                            font-weight: $font-weight7;
+                            font-size: 45px;
+                            padding-bottom: 5%;
+                        }
+                        h3 {
+                            font-family: $font-family-body;
+                            font-weight: $font-weight4;
+                            font-size: 20px;
+                        }
+                        button {
+                            background-color: $pink;
+                            color: white;
+                            height: 50px;
+                            border-radius: 25px;
+                            font-family: $font-family-body;
+                            font-weight: $font-weight6;
+                            font-size: 14px;
+                            margin-top: 3%;
+                            padding: 0 7%;
+                            &:hover {
+                                background-color: white;
+                                border-color: $pink;
+                                color: $pink;
+                            }
+                        }
+                    }
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .background {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
+@media screen and (max-width:789px) {
+    .top {
+        flex-flow: column-reverse;
+        .col-md-6 {
+            .container {
+                img {
+                    margin-top: 5%;
+                }
+            }
+        }
+    }
+}
+
+.feat-cont {
+    z-index: 4;
+    .feat-row {
+        margin: 8% 5% 6% 5%;
+        border: 5px solid $very-pale-cyan;
+        border-radius: 20px;
+        .col-md-6 {
+            padding: 5%;
+            img {
+                width: 100%;
+            }
+            h2 {
+                margin: 15% auto 3% auto;
+                font-family: $font-family-head;
+                font-weight: $font-weight6;
+                font-size: 30px;
+            }
+            h4 {
+                font-family: $font-family-body;
+                font-weight: $font-weight4;
+                font-size: 18px;
+                padding-right: 5%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:789px) {
+    .feat-row {
+        padding: 5% 0;
+    }
+    .reverse {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+}
+
+.cta-cont {
+    width: 50%;
+    border: 5px solid $very-pale-cyan;
+    border-radius: 20px;
+    text-align: center;
+    padding: 3% 0;
+    background-color: white;
+    position: relative;
+    top: 50px;
+    h2 {
+        font-family: $font-family-head;
+        font-size: 30px;
+        font-weight: $font-weight6;
+        padding-bottom: 2%;
+    }
+    .cta-btn {
+        background-color: $pink;
+        color: white;
+        height: 50px;
+        border-radius: 25px;
+        font-family: $font-family-body;
+        font-weight: $font-weight6;
+        font-size: 14px;
+        padding: 0 7%;
+        &:hover {
+            background-color: white;
+            border-color: $pink;
+            color: $pink;
+        }
+    }
+}
+
+@media screen and (max-width:789px) {
+    .cta-cont {
+        width: 90%;
+    }
+}
+
+.foot-cont {
+    background-color: $very-dark-cyan;
+    padding: 7% 5%;
+    img {
+        margin-bottom: 2%;
+    }
+    .row {
+        img {
+            margin: 2% 5%;
+            width: 15px;
+            height: 15px;
+        }
+        h5 {
+            font-family: $font-family-body;
+            font-weight: $font-weight4;
+            font-size: 14px;
+            line-height: 1.5rem;
+            color: white;
+            padding: 2% 0;
+        }
+        .col-lg-3 {
+            h5 {
+                font-family: $font-family-body;
+                font-weight: $font-weight4;
+                font-size: 14px;
+                color: white;
+                padding: 2% 0;
+                &:hover {
+                    color: $very-pale-cyan
+                }
+            }
+            .row {
+                i {
+                    color: white;
+                    margin: auto 3%;
+                    &:hover {
+                        color: $very-pale-cyan
+                    }
+                }
+                img {
+                    margin: 2% 5%;
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:789px) {
+    .foot-cont {
+        img {
+            margin-top: 10%;
+        }
+    }
+}
